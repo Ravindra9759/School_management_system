@@ -1,0 +1,13 @@
+.employee-dashboard { min-height: 100vh; padding: 0 7vw 48px; color: #30394c; background: #f7f8fb; font-family: 'DM Sans', sans-serif; }
+.employee-dashboard-header { height: 72px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #e9ebf1; }
+.employee-dashboard-brand { display: flex; align-items: center; gap: 9px; color: #555dc8; font: 700 18px 'Manrope', sans-serif; }
+.employee-dashboard-header button { display: flex; align-items: center; gap: 7px; padding: 9px 12px; border: 1px solid #e5e7ee; border-radius: 8px; color: #616a7e; background: #fff; font: 600 12px 'DM Sans', sans-serif; cursor: pointer; }
+.employee-dashboard-card { width: min(100%, 560px); margin: 11vh auto 0; padding: 38px; border: 1px solid #e9ebf1; border-radius: 15px; background: #fff; box-shadow: 0 10px 35px #252d410a; }
+.employee-dashboard-icon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 13px; color: #555dc8; background: #f0f0fd; }
+.employee-dashboard-card > p { margin: 24px 0 7px; color: #949aab; font-size: 10px; font-weight: 700; letter-spacing: 1.1px; }
+.employee-dashboard-card h1 { margin: 0; color: #252d41; font: 700 26px 'Manrope', sans-serif; }
+.employee-dashboard-card > span { display: block; margin-top: 9px; color: #858c9d; font-size: 13px; }
+.employee-dashboard-account { display: flex; justify-content: space-between; gap: 12px; margin-top: 29px; padding: 14px 0 0; border-top: 1px solid #eff0f4; font-size: 12px; }
+.employee-dashboard-account strong { color: #586074; }
+.employee-dashboard-account span { color: #858c9d; }
+@media (max-width: 600px) { .employee-dashboard { padding-inline: 20px; } .employee-dashboard-card { margin-top: 7vh; padding: 27px 22px; } .employee-dashboard-card h1 { font-size: 22px; } }

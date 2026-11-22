@@ -1,0 +1,145 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+2026-11-03T08:48:29.217-08:00  INFO 12168 --- [smartSchool] [           main] c.b.SmartSchoolApplication               : Starting SmartSchoolApplication v0.0.1-SNAPSHOT using Java 21.0.12.1 with PID 12168 (D:\School-management-system\backend\smartSchool-0.0.1-SNAPSHOT.jar started by Ravindra Singh in D:\School-management-system\backend)
+2026-11-03T08:48:29.270-08:00  INFO 12168 --- [smartSchool] [           main] c.b.SmartSchoolApplication               : The following 1 profile is active: "dev"
+2026-11-03T08:48:34.790-08:00  INFO 12168 --- [smartSchool] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-03T08:48:35.374-08:00  INFO 12168 --- [smartSchool] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 515 ms. Found 2 JPA repository interfaces.
+2026-11-03T08:48:41.749-08:00  INFO 12168 --- [smartSchool] [           main] o.s.b.t.TomcatWebServer                  : Tomcat initialized with port 8080 (http)
+2026-11-03T08:48:41.834-08:00  INFO 12168 --- [smartSchool] [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2026-11-03T08:48:41.835-08:00  INFO 12168 --- [smartSchool] [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-03T08:48:41.975-08:00  INFO 12168 --- [smartSchool] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 11658 ms
+2026-11-03T08:48:43.100-08:00  INFO 12168 --- [smartSchool] [           main] o.h.o.jpa                                : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-03T08:48:43.455-08:00  INFO 12168 --- [smartSchool] [           main] o.h.o.core                               : HHH000001: Hibernate ORM core version 7.4.13.Final
+2026-11-03T08:48:47.208-08:00  INFO 12168 --- [smartSchool] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-03T08:48:47.333-08:00  INFO 12168 --- [smartSchool] [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2026-11-03T08:48:48.329-08:00  INFO 12168 --- [smartSchool] [           main] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4153a832
+2026-11-03T08:48:48.334-08:00  INFO 12168 --- [smartSchool] [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2026-11-03T08:48:48.777-08:00  WARN 12168 --- [smartSchool] [           main] o.h.o.deprecation                        : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-03T08:48:48.831-08:00  INFO 12168 --- [smartSchool] [           main] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/school?allowPublicKeyRetrieval=true&useSSL=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: school/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-03T08:48:52.766-08:00  INFO 12168 --- [smartSchool] [           main] o.h.o.core                               : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-03T08:48:53.068-08:00  INFO 12168 --- [smartSchool] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-03T08:48:53.400-08:00  INFO 12168 --- [smartSchool] [           main] o.s.d.j.r.q.QueryEnhancerFactories       : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-03T08:48:57.995-08:00  INFO 12168 --- [smartSchool] [           main] c.b.c.ApplicationCache                   : Cache all time zones-[Asia/Calcutta, UTC, America/Los_Angeles, Australia/Lord_Howe, Australia/Sydney, Australia/Adelaide, Australia/Eucla, Australia/West, Asia/Dubai, Africa/Dar_es_Salaam, Africa/Kigali, Africa/Abidjan, Asia/Kathmandu, Asia/Karachi, America/Panama, Asia/Jakarta, America/Puerto_Rico, America/Santo_Domingo, Brazil/East, America/Sao_Paulo, Asia/Rangoon, Portugal, Poland, Asia/Riyadh, Asia/Dhaka, Pacific/Port_Moresby, Asia/Kuala_Lumpur, Mexico/General, Mexico/BajaSur, Mexico/BajaNorte, America/Guyana, Europe/Malta, America/Bogota, America/Guayaquil, America/Lima, America/Santiago, America/Argentina/Buenos_Aires]
+Hibernate: select r1_0.role_name,r1_0.added,r1_0.asgn_by_admin,r1_0.asgn_to_collage,r1_0.asgn_to_school,r1_0.asgn_to_student,r1_0.asgn_to_teacher,r1_0.asgn_to_university,r1_0.asgn_to_user,r1_0.default_role,r1_0.no_access,r1_0.updated,r1_0.usr_txt,r1_0.vsbl_to_all from role r1_0 where r1_0.role_name=?
+Hibernate: select a1_0.role_name,a1_0.authority from role_authorities a1_0 where a1_0.role_name=?
+Hibernate: select r1_0.role_name,r1_0.added,r1_0.asgn_by_admin,r1_0.asgn_to_collage,r1_0.asgn_to_school,r1_0.asgn_to_student,r1_0.asgn_to_teacher,r1_0.asgn_to_university,r1_0.asgn_to_user,r1_0.default_role,r1_0.no_access,r1_0.updated,r1_0.usr_txt,r1_0.vsbl_to_all from role r1_0 where r1_0.role_name=?
+Hibernate: select a1_0.role_name,a1_0.authority from role_authorities a1_0 where a1_0.role_name=?
+Hibernate: select r1_0.role_name,r1_0.added,r1_0.asgn_by_admin,r1_0.asgn_to_collage,r1_0.asgn_to_school,r1_0.asgn_to_student,r1_0.asgn_to_teacher,r1_0.asgn_to_university,r1_0.asgn_to_user,r1_0.default_role,r1_0.no_access,r1_0.updated,r1_0.usr_txt,r1_0.vsbl_to_all from role r1_0 where r1_0.role_name=?
+Hibernate: select a1_0.role_name,a1_0.authority from role_authorities a1_0 where a1_0.role_name=?
+Hibernate: select r1_0.role_name,r1_0.added,r1_0.asgn_by_admin,r1_0.asgn_to_collage,r1_0.asgn_to_school,r1_0.asgn_to_student,r1_0.asgn_to_teacher,r1_0.asgn_to_university,r1_0.asgn_to_user,r1_0.default_role,r1_0.no_access,r1_0.updated,r1_0.usr_txt,r1_0.vsbl_to_all from role r1_0 where r1_0.role_name=?
+Hibernate: select a1_0.role_name,a1_0.authority from role_authorities a1_0 where a1_0.role_name=?
+Hibernate: select r1_0.role_name,r1_0.added,r1_0.asgn_by_admin,r1_0.asgn_to_collage,r1_0.asgn_to_school,r1_0.asgn_to_student,r1_0.asgn_to_teacher,r1_0.asgn_to_university,r1_0.asgn_to_user,r1_0.default_role,r1_0.no_access,r1_0.updated,r1_0.usr_txt,r1_0.vsbl_to_all from role r1_0 where r1_0.role_name=?
+Hibernate: select a1_0.role_name,a1_0.authority from role_authorities a1_0 where a1_0.role_name=?
+Hibernate: select r1_0.role_name,r1_0.added,r1_0.asgn_by_admin,r1_0.asgn_to_collage,r1_0.asgn_to_school,r1_0.asgn_to_student,r1_0.asgn_to_teacher,r1_0.asgn_to_university,r1_0.asgn_to_user,r1_0.default_role,r1_0.no_access,r1_0.updated,r1_0.usr_txt,r1_0.vsbl_to_all from role r1_0 where r1_0.role_name=?
+Hibernate: select a1_0.role_name,a1_0.authority from role_authorities a1_0 where a1_0.role_name=?
+Hibernate: select r1_0.role_name,r1_0.added,r1_0.asgn_by_admin,r1_0.asgn_to_collage,r1_0.asgn_to_school,r1_0.asgn_to_student,r1_0.asgn_to_teacher,r1_0.asgn_to_university,r1_0.asgn_to_user,r1_0.default_role,r1_0.no_access,r1_0.updated,r1_0.usr_txt,r1_0.vsbl_to_all from role r1_0 where r1_0.role_name=?
+Hibernate: select a1_0.role_name,a1_0.authority from role_authorities a1_0 where a1_0.role_name=?
+Hibernate: select r1_0.role_name,r1_0.added,r1_0.asgn_by_admin,r1_0.asgn_to_collage,r1_0.asgn_to_school,r1_0.asgn_to_student,r1_0.asgn_to_teacher,r1_0.asgn_to_university,r1_0.asgn_to_user,r1_0.default_role,r1_0.no_access,r1_0.updated,r1_0.usr_txt,r1_0.vsbl_to_all from role r1_0 where r1_0.role_name=?
+Hibernate: select a1_0.role_name,a1_0.authority from role_authorities a1_0 where a1_0.role_name=?
+Hibernate: select bu1_0.id,bu1_0.account_suspended,bu1_0.added,bu1_0.address,bu1_0.company_name,bu1_0.confirm,bu1_0.email,bu1_0.enabled,bu1_0.img_url,bu1_0.jwt,bu1_0.lang,bu1_0.name,bu1_0.owner_username,bu1_0.password,bu1_0.ph_auth,bu1_0.phone_no,bu1_0.updated,bu1_0.usr_lvl,bu1_0.username from bvr_user bu1_0 where bu1_0.username=?
+Hibernate: select r1_0.user_id,r1_1.role_name,r1_1.added,r1_1.asgn_by_admin,r1_1.asgn_to_collage,r1_1.asgn_to_school,r1_1.asgn_to_student,r1_1.asgn_to_teacher,r1_1.asgn_to_university,r1_1.asgn_to_user,r1_1.default_role,r1_1.no_access,r1_1.updated,r1_1.usr_txt,r1_1.vsbl_to_all from user_roles r1_0 join role r1_1 on r1_1.role_name=r1_0.role_name where r1_0.user_id=?
+Hibernate: select a1_0.role_name,a1_0.authority from role_authorities a1_0 where a1_0.role_name=?
+Hibernate: select bu1_0.id,bu1_0.account_suspended,bu1_0.added,bu1_0.address,bu1_0.company_name,bu1_0.confirm,bu1_0.email,bu1_0.enabled,bu1_0.img_url,bu1_0.jwt,bu1_0.lang,bu1_0.name,bu1_0.owner_username,bu1_0.password,bu1_0.ph_auth,bu1_0.phone_no,bu1_0.updated,bu1_0.usr_lvl,bu1_0.username from bvr_user bu1_0 where bu1_0.username=?
+Hibernate: select r1_0.user_id,r1_1.role_name,r1_1.added,r1_1.asgn_by_admin,r1_1.asgn_to_collage,r1_1.asgn_to_school,r1_1.asgn_to_student,r1_1.asgn_to_teacher,r1_1.asgn_to_university,r1_1.asgn_to_user,r1_1.default_role,r1_1.no_access,r1_1.updated,r1_1.usr_txt,r1_1.vsbl_to_all from user_roles r1_0 join role r1_1 on r1_1.role_name=r1_0.role_name where r1_0.user_id=?
+Hibernate: select a1_0.role_name,a1_0.authority from role_authorities a1_0 where a1_0.role_name=?
+Hibernate: select bu1_0.id,bu1_0.account_suspended,bu1_0.added,bu1_0.address,bu1_0.company_name,bu1_0.confirm,bu1_0.email,bu1_0.enabled,bu1_0.img_url,bu1_0.jwt,bu1_0.lang,bu1_0.name,bu1_0.owner_username,bu1_0.password,bu1_0.ph_auth,bu1_0.phone_no,bu1_0.updated,bu1_0.usr_lvl,bu1_0.username from bvr_user bu1_0 where bu1_0.username=?
+Hibernate: select r1_0.user_id,r1_1.role_name,r1_1.added,r1_1.asgn_by_admin,r1_1.asgn_to_collage,r1_1.asgn_to_school,r1_1.asgn_to_student,r1_1.asgn_to_teacher,r1_1.asgn_to_university,r1_1.asgn_to_user,r1_1.default_role,r1_1.no_access,r1_1.updated,r1_1.usr_txt,r1_1.vsbl_to_all from user_roles r1_0 join role r1_1 on r1_1.role_name=r1_0.role_name where r1_0.user_id=?
+Hibernate: select a1_0.role_name,a1_0.authority from role_authorities a1_0 where a1_0.role_name=?
+Hibernate: select bu1_0.id,bu1_0.account_suspended,bu1_0.added,bu1_0.address,bu1_0.company_name,bu1_0.confirm,bu1_0.email,bu1_0.enabled,bu1_0.img_url,bu1_0.jwt,bu1_0.lang,bu1_0.name,bu1_0.owner_username,bu1_0.password,bu1_0.ph_auth,bu1_0.phone_no,bu1_0.updated,bu1_0.usr_lvl,bu1_0.username from bvr_user bu1_0 where bu1_0.username=?
+Hibernate: select r1_0.user_id,r1_1.role_name,r1_1.added,r1_1.asgn_by_admin,r1_1.asgn_to_collage,r1_1.asgn_to_school,r1_1.asgn_to_student,r1_1.asgn_to_teacher,r1_1.asgn_to_university,r1_1.asgn_to_user,r1_1.default_role,r1_1.no_access,r1_1.updated,r1_1.usr_txt,r1_1.vsbl_to_all from user_roles r1_0 join role r1_1 on r1_1.role_name=r1_0.role_name where r1_0.user_id=?
+Hibernate: select a1_0.role_name,a1_0.authority from role_authorities a1_0 where a1_0.role_name=?
+Hibernate: select bu1_0.id,bu1_0.account_suspended,bu1_0.added,bu1_0.address,bu1_0.company_name,bu1_0.confirm,bu1_0.email,bu1_0.enabled,bu1_0.img_url,bu1_0.jwt,bu1_0.lang,bu1_0.name,bu1_0.owner_username,bu1_0.password,bu1_0.ph_auth,bu1_0.phone_no,bu1_0.updated,bu1_0.usr_lvl,bu1_0.username from bvr_user bu1_0 where bu1_0.username=?
+Hibernate: select r1_0.user_id,r1_1.role_name,r1_1.added,r1_1.asgn_by_admin,r1_1.asgn_to_collage,r1_1.asgn_to_school,r1_1.asgn_to_student,r1_1.asgn_to_teacher,r1_1.asgn_to_university,r1_1.asgn_to_user,r1_1.default_role,r1_1.no_access,r1_1.updated,r1_1.usr_txt,r1_1.vsbl_to_all from user_roles r1_0 join role r1_1 on r1_1.role_name=r1_0.role_name where r1_0.user_id=?
+Hibernate: select a1_0.role_name,a1_0.authority from role_authorities a1_0 where a1_0.role_name=?
+Hibernate: select bu1_0.id,bu1_0.account_suspended,bu1_0.added,bu1_0.address,bu1_0.company_name,bu1_0.confirm,bu1_0.email,bu1_0.enabled,bu1_0.img_url,bu1_0.jwt,bu1_0.lang,bu1_0.name,bu1_0.owner_username,bu1_0.password,bu1_0.ph_auth,bu1_0.phone_no,bu1_0.updated,bu1_0.usr_lvl,bu1_0.username from bvr_user bu1_0 where bu1_0.username=?
+Hibernate: select r1_0.user_id,r1_1.role_name,r1_1.added,r1_1.asgn_by_admin,r1_1.asgn_to_collage,r1_1.asgn_to_school,r1_1.asgn_to_student,r1_1.asgn_to_teacher,r1_1.asgn_to_university,r1_1.asgn_to_user,r1_1.default_role,r1_1.no_access,r1_1.updated,r1_1.usr_txt,r1_1.vsbl_to_all from user_roles r1_0 join role r1_1 on r1_1.role_name=r1_0.role_name where r1_0.user_id=?
+Hibernate: select a1_0.role_name,a1_0.authority from role_authorities a1_0 where a1_0.role_name=?
+Hibernate: select bu1_0.id,bu1_0.account_suspended,bu1_0.added,bu1_0.address,bu1_0.company_name,bu1_0.confirm,bu1_0.email,bu1_0.enabled,bu1_0.img_url,bu1_0.jwt,bu1_0.lang,bu1_0.name,bu1_0.owner_username,bu1_0.password,bu1_0.ph_auth,bu1_0.phone_no,bu1_0.updated,bu1_0.usr_lvl,bu1_0.username from bvr_user bu1_0 where bu1_0.username=?
+Hibernate: select r1_0.user_id,r1_1.role_name,r1_1.added,r1_1.asgn_by_admin,r1_1.asgn_to_collage,r1_1.asgn_to_school,r1_1.asgn_to_student,r1_1.asgn_to_teacher,r1_1.asgn_to_university,r1_1.asgn_to_user,r1_1.default_role,r1_1.no_access,r1_1.updated,r1_1.usr_txt,r1_1.vsbl_to_all from user_roles r1_0 join role r1_1 on r1_1.role_name=r1_0.role_name where r1_0.user_id=?
+Hibernate: select a1_0.role_name,a1_0.authority from role_authorities a1_0 where a1_0.role_name=?
+2026-11-03T08:49:00.337-08:00  WARN 12168 --- [smartSchool] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-03T08:49:00.834-08:00  INFO 12168 --- [smartSchool] [           main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name usernamePwdAuthenticationProvider
+2026-11-03T08:49:00.836-08:00  WARN 12168 --- [smartSchool] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-11-03T08:49:01.801-08:00  WARN 12168 --- [smartSchool] [           main] o.s.s.c.a.w.b.WebSecurity                : 
+
+********************************************************************
+**********        Security debugging is enabled.       *************
+**********    This may include sensitive information.  *************
+**********      Do not use in a production system!     *************
+********************************************************************
+
+
+2026-11-03T08:49:05.175-08:00  INFO 12168 --- [smartSchool] [           main] o.s.b.t.TomcatWebServer                  : Tomcat started on port 8080 (http) with context path '/'
+2026-11-03T08:49:05.209-08:00  INFO 12168 --- [smartSchool] [           main] c.b.SmartSchoolApplication               : Started SmartSchoolApplication in 38.442 seconds (process running for 41.813)
+2026-11-03T08:49:17.701-08:00  INFO 12168 --- [smartSchool] [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03T08:49:17.701-08:00  INFO 12168 --- [smartSchool] [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2026-11-03T08:49:17.708-08:00  INFO 12168 --- [smartSchool] [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 5 ms
+2026-11-03T08:49:17.738-08:00  INFO 12168 --- [smartSchool] [nio-8080-exec-1] Spring Security Debugger                 : 
+
+************************************************************
+
+Request received for POST '/auth/v1/singin':
+
+org.apache.catalina.connector.RequestFacade@f397ac8
+
+servletPath:/auth/v1/singin
+pathInfo:null
+headers: 
+Postman-Token: 448f7432-9695-467e-b094-a79d31061da9
+Content-Type: application/json
+Content-Length: 93
+Host: localhost:8080
+User-Agent: PostmanRuntime/2.14.0
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+Security filter chain: [
+  DisableEncodeUrlFilter
+  WebAsyncManagerIntegrationFilter
+  SecurityContextHolderFilter
+  HeaderWriterFilter
+  CorsFilter
+  LogoutFilter
+  UsernamePasswordAuthenticationFilter
+  DefaultResourcesFilter
+  DefaultLoginPageGeneratingFilter
+  DefaultLogoutPageGeneratingFilter
+  RequestValidationBeforeFilter
+  JWTTokenValidatorFilter
+  AuthoritiesLoggingAtFilter
+  BasicAuthenticationFilter
+  AuthoritiesLoggingAfterFilter
+  RequestCacheAwareFilter
+  SecurityContextHolderAwareRequestFilter
+  AnonymousAuthenticationFilter
+  SessionManagementFilter
+  ExceptionTranslationFilter
+  AuthorizationFilter
+]
+
+
+************************************************************
+
+
+2026-11-03T08:49:17.772-08:00  INFO 12168 --- [smartSchool] [nio-8080-exec-1] c.b.c.s.f.AuthoritiesLoggingAtFilter     : Authentication Validation is in progress

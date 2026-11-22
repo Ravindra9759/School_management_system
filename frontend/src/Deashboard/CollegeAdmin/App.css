@@ -1,0 +1,128 @@
+.college-admin-shell { min-height: 100vh; display: flex; color: #343c50; background: #f7f8fb; font-family: 'DM Sans', sans-serif; }
+.college-admin-sidebar { position: fixed; inset: 0 auto 0 0; z-index: 20; width: 252px; display: flex; flex-direction: column; padding: 25px 17px 16px; border-right: 1px solid #eceef3; background: #fff; }
+.college-admin-brand { display: flex; align-items: center; gap: 10px; padding: 0 8px; color: #242d42; text-decoration: none; font: 800 21px/1 'Manrope', sans-serif; letter-spacing: -1px; }
+.college-admin-brand-mark { width: 35px; height: 35px; display: grid; place-items: center; border-radius: 11px; color: #fff; background: #6269d9; box-shadow: 0 5px 12px #6269d933; }
+.college-admin-brand > span:last-child > span { color: #f3a65c; }
+.college-admin-school { display: flex; align-items: center; gap: 10px; margin: 31px 0 28px; padding: 11px; border: 1px solid #eceef3; border-radius: 11px; }
+.college-admin-school-logo { width: 35px; height: 35px; display: grid; place-items: center; flex: 0 0 auto; border-radius: 9px; color: #e79a50; background: #fff2e4; font: 800 18px 'Manrope', sans-serif; }
+.college-admin-school > div:last-child { min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.college-admin-school strong { overflow: hidden; color: #343c50; font-size: 11.5px; text-overflow: ellipsis; white-space: nowrap; }
+.college-admin-school span, .college-admin-profile span { color: #9298a8; font-size: 10px; }
+.college-admin-nav-caption { margin: 0 9px 10px; color: #a0a5b3; font-size: 9px; font-weight: 700; letter-spacing: 1.1px; }
+.college-admin-nav { display: flex; flex-direction: column; gap: 5px; }
+.college-admin-nav button { position: relative; width: 100%; min-height: 43px; display: flex; align-items: center; gap: 12px; padding: 0 11px; border: 0; border-radius: 9px; color: #747d90; background: transparent; text-align: left; font: 500 12px 'DM Sans', sans-serif; cursor: pointer; }
+.college-admin-nav button > svg { color: #979eaf; }
+.college-admin-nav button:hover { color: #5057c8; background: #f6f6fe; }
+.college-admin-nav-active, .college-admin-nav-active:hover { color: #575fcf !important; background: #f0f0fd !important; font-weight: 700 !important; }
+.college-admin-nav-active::before { position: absolute; inset: 11px auto 11px 0; width: 3px; border-radius: 0 3px 3px 0; background: #6269d9; content: ''; }
+.college-admin-nav-active > svg { color: #6269d9 !important; }
+.college-admin-nav-count { margin-left: auto; padding: 3px 6px; border-radius: 6px; color: #6269d9; background: #e9eaff; font-size: 9px; font-weight: 700; }
+.college-admin-profile { display: flex; align-items: center; gap: 9px; margin-top: auto; padding: 14px 5px 0; border-top: 1px solid #eff0f4; }
+.college-admin-profile > div:nth-child(2) { min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 3px; }
+.college-admin-profile strong { overflow: hidden; color: #424a5d; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.college-admin-avatar { width: 34px; height: 34px; display: grid; place-items: center; flex: 0 0 auto; border: 1px solid #f1d8c8; border-radius: 50%; color: #a9684c; background: #fbe9dc; font-size: 11px; font-weight: 700; }
+.college-admin-profile > button { width: 28px; height: 28px; display: grid; place-items: center; border: 0; border-radius: 8px; color: #9298a7; background: transparent; cursor: pointer; }
+.college-admin-profile > button:hover { color: #5b62d3; background: #f1f1fc; }
+.college-admin-main { width: calc(100% - 252px); min-height: 100vh; margin-left: 252px; }
+.college-admin-topbar { position: sticky; top: 0; z-index: 10; height: 67px; display: flex; align-items: center; justify-content: space-between; padding: 0 37px; border-bottom: 1px solid #eceef3; background: #ffffffed; backdrop-filter: blur(14px); }
+.college-admin-breadcrumb { display: flex; align-items: center; gap: 9px; color: #9a9faf; font-size: 11px; }
+.college-admin-breadcrumb strong { color: #4a5266; font-weight: 600; }
+.college-admin-user-chip { display: flex; align-items: center; gap: 8px; padding: 0; border: 0; color: #4c5366; background: transparent; font: 600 11px 'DM Sans', sans-serif; cursor: pointer; }
+.college-admin-user-chip > svg { color: #9ca2b1; }
+.college-admin-avatar-small { width: 30px; height: 30px; font-size: 10px; }
+.college-admin-content { width: min(100%, 1500px); margin: 0 auto; padding: 31px 37px 20px; }
+.college-admin-welcome { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin: 0 0 22px; }
+.college-admin-eyebrow, .college-admin-section-kicker { color: #a0a5b2; font-size: 9px; font-weight: 700; letter-spacing: 1.05px; }
+.college-admin-eyebrow { margin: 0 0 8px; }
+.college-admin-eyebrow i { width: 4px; height: 4px; display: inline-block; margin: 0 6px 2px; border-radius: 50%; background: #d3a26b; }
+.college-admin-welcome h1 { margin: 0; color: #252d41; font: 700 25px/1.35 'Manrope', sans-serif; letter-spacing: -.75px; }
+.college-admin-welcome h1 > span { margin-left: 7px; color: #eead64; font-size: 16px; vertical-align: 3px; }
+.college-admin-welcome p:last-child { margin: 5px 0 0; color: #8d94a4; font-size: 11px; }
+.college-admin-primary-button, .college-admin-secondary-button { min-height: 37px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 13px; border: 0; border-radius: 8px; font: 600 10.5px 'DM Sans', sans-serif; cursor: pointer; white-space: nowrap; }
+.college-admin-primary-button { color: #fff; background: #6269d9; box-shadow: 0 4px 10px #6269d929; }
+.college-admin-primary-button:hover { background: #525ac8; }
+.college-admin-secondary-button { border: 1px solid #e8eaf0; color: #626a7d; background: #fff; }
+.college-admin-storage-notice { margin: 0 0 15px; padding: 10px 12px; border: 1px solid #f1dfbf; border-radius: 7px; color: #876a35; background: #fffaf0; font-size: 10px; line-height: 1.6; }
+.college-admin-notice, .college-admin-error { margin: 0 0 14px; font-size: 10px; }
+.college-admin-notice { color: #555fc8; }
+.college-admin-error { color: #bf5353; }
+.college-admin-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-bottom: 15px; }
+.college-admin-card, .college-admin-panel { min-width: 0; border: 1px solid #eceef3; border-radius: 11px; background: #fff; box-shadow: 0 3px 12px #242d4205; }
+.college-admin-card { padding: 15px 16px 13px; }
+.college-admin-card-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: #7e8596; font-size: 10px; }
+.college-admin-icon { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px; }
+.college-admin-tone-violet { color: #6960bc; background: #eeeaff; }
+.college-admin-tone-mint { color: #328d73; background: #e4f6ef; }
+.college-admin-tone-blue { color: #4787aa; background: #e6f4fb; }
+.college-admin-card > strong { display: block; margin-top: 8px; color: #252d41; font: 700 25px 'Manrope', sans-serif; }
+.college-admin-card > p { display: flex; align-items: center; gap: 4px; margin: 6px 0 0; color: #9a9faf; font-size: 9px; }
+.college-admin-card > p > svg { color: #3d9b7a; }
+.college-admin-panel { padding: 17px 0 0; }
+.college-admin-panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 17px 14px; }
+.college-admin-panel-heading h2 { margin: 4px 0 0; color: #343c50; font: 700 14px 'Manrope', sans-serif; }
+.college-admin-quick-actions { display: flex; flex-wrap: wrap; gap: 7px; }
+.college-admin-quick-actions button, .college-admin-row-actions button { min-height: 30px; padding: 0 9px; border: 1px solid #e8eaf0; border-radius: 7px; color: #6269d9; background: #fff; font: 600 9px 'DM Sans', sans-serif; cursor: pointer; }
+.college-admin-quick-actions button:hover, .college-admin-row-actions button:hover { border-color: #c9cafa; background: #f7f7ff; }
+.college-admin-search { width: 220px; height: 35px; display: flex; align-items: center; gap: 8px; padding: 0 10px; border: 1px solid #eceef3; border-radius: 8px; color: #9ca2b1; background: #fbfbfd; }
+.college-admin-search:focus-within { border-color: #b7baf1; background: #fff; box-shadow: 0 0 0 3px #6269d914; }
+.college-admin-search input { width: 100%; min-width: 0; padding: 0; border: 0; outline: 0; color: #454d61; background: transparent; font: 10px 'DM Sans', sans-serif; }
+.college-admin-search input::placeholder { color: #a4a9b5; }
+.college-admin-table-wrap { overflow-x: auto; }
+.college-admin-table { width: 100%; border-collapse: collapse; text-align: left; white-space: nowrap; }
+.college-admin-table th { padding: 9px 10px; border-top: 1px solid #f0f1f5; border-bottom: 1px solid #f0f1f5; color: #999faf; background: #fbfbfd; font-size: 8px; font-weight: 600; }
+.college-admin-table th:first-child, .college-admin-table td:first-child { padding-left: 17px; }
+.college-admin-table th:last-child, .college-admin-table td:last-child { padding-right: 12px; }
+.college-admin-table td { padding: 10px; border-bottom: 1px solid #f1f2f5; color: #7f8798; font-size: 9px; }
+.college-admin-table tbody tr:last-child td { border-bottom: 0; }
+.college-admin-table td strong { display: block; color: #4d5569; font-size: 9px; font-weight: 600; }
+.college-admin-table td small { display: block; margin-top: 3px; color: #a0a5b2; font-size: 8px; }
+.college-admin-row-actions { display: flex; gap: 6px; }
+.college-admin-row-actions button { min-height: 27px; }
+.college-admin-row-actions button:last-child { display: grid; width: 28px; place-items: center; padding: 0; color: #b65b5b; }
+.college-admin-empty { padding: 24px !important; color: #9096a5 !important; text-align: center; }
+.college-admin-directory-panel { margin-top: 15px; }
+.college-admin-total { margin-left: 5px; padding: 3px 7px; border-radius: 6px; color: #6269d9; background: #eeeeff; font: 600 9px 'DM Sans', sans-serif; vertical-align: 2px; }
+.college-admin-form { margin-bottom: 15px; padding-bottom: 17px; }
+.college-admin-close-button { width: 32px; height: 32px; display: grid; place-items: center; border: 0; border-radius: 7px; color: #747d90; background: transparent; cursor: pointer; }
+.college-admin-close-button:hover { color: #575fcf; background: #f0f0fd; }
+.college-admin-form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; padding: 0 17px; }
+.college-admin-form-grid label { display: flex; flex-direction: column; gap: 6px; color: #51596d; font-size: 10px; font-weight: 600; }
+.college-admin-form-grid input { width: 100%; height: 38px; padding: 0 10px; border: 1px solid #e6e8ef; border-radius: 7px; outline: 0; color: #414a5e; background: #fff; font: 10px 'DM Sans', sans-serif; }
+.college-admin-form-grid input:focus { border-color: #9b9fea; box-shadow: 0 0 0 3px #6269d914; }
+.college-admin-form-actions { display: flex; justify-content: flex-end; gap: 8px; margin: 17px 17px 0; }
+.college-admin-footer { display: flex; justify-content: space-between; gap: 12px; margin-top: 17px; padding: 13px 0 0; border-top: 1px solid #eceef3; color: #a0a5b2; font-size: 8px; }
+
+@media (max-width: 1100px) {
+  .college-admin-sidebar { width: 225px; }
+  .college-admin-main { width: calc(100% - 225px); margin-left: 225px; }
+  .college-admin-topbar { padding: 0 25px; }
+  .college-admin-content { padding: 27px 25px 18px; }
+}
+
+@media (max-width: 800px) {
+  .college-admin-shell { display: block; }
+  .college-admin-sidebar { position: static; width: auto; padding: 12px 15px; border-right: 0; border-bottom: 1px solid #eceef3; }
+  .college-admin-brand { padding: 0; }
+  .college-admin-school { margin: 12px 0; }
+  .college-admin-nav-caption, .college-admin-profile { display: none; }
+  .college-admin-nav { flex-direction: row; overflow-x: auto; gap: 5px; }
+  .college-admin-nav button { width: auto; min-height: 37px; flex: 0 0 auto; }
+  .college-admin-nav-count { margin-left: 0; }
+  .college-admin-nav-active::before { inset: auto 10px 0; width: auto; height: 3px; }
+  .college-admin-main { width: 100%; margin-left: 0; }
+  .college-admin-topbar { height: 56px; padding: 0 18px; }
+  .college-admin-content { padding: 23px 18px 16px; }
+}
+
+@media (max-width: 600px) {
+  .college-admin-content { padding: 20px 13px 15px; }
+  .college-admin-welcome { align-items: flex-start; flex-direction: column; gap: 12px; }
+  .college-admin-welcome h1 { font-size: 21px; }
+  .college-admin-metrics { grid-template-columns: 1fr; gap: 9px; }
+  .college-admin-card { padding: 12px; }
+  .college-admin-panel-heading { align-items: flex-start; flex-direction: column; }
+  .college-admin-quick-actions { width: 100%; }
+  .college-admin-search { width: 100%; }
+  .college-admin-form-grid { grid-template-columns: 1fr; gap: 11px; }
+  .college-admin-user-chip > span:not(.college-admin-avatar), .college-admin-user-chip > svg { display: none; }
+}
